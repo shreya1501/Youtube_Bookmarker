@@ -17,5 +17,7 @@ Objective 5:
 To provide users with the option to **delete bookmarks**. This functionality gives users the flexibility to remove unnecessary bookmarks, keeping their bookmark list organized and relevant to their needs.
 
 
+<br>
+
 https://www.loom.com/share/dc76b0b4b3c8445eacbaa30e3dbab795?sid=8f6a5428-50c9-4e0f-8a59-5cb916070a9d
 
