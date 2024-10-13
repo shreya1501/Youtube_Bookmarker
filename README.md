@@ -1,8 +1,8 @@
 # Youtube_Bookmarker
 <br>
 
-**Technical implementation details**
-
+**Technical implementation details:**
+<ul>
 1)Import Function: The code imports <ins>getActiveTabURL</ins> to obtain the URL of the currently active tab, which is essential for managing bookmarks.
 
 2)Create Bookmark Elements: The <ins>addNewBookmark</ins> function builds HTML elements for each bookmark, including a title and buttons for playback and deletion.
@@ -20,6 +20,7 @@
 8)Retrieve Bookmarks from Storage: The code uses <ins>chrome.storage.sync.get</ins> to fetch the bookmarks associated with the current video ID from Chrome's storage, allowing users to see their saved bookmarks.
 
 9)Display Message for Unsupported Pages: If the active tab is not a YouTube video page, the code updates the display to inform the user that bookmarking is not possible on that page.
+</ul>
 
 <br>
 
