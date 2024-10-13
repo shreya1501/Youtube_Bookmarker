@@ -21,6 +21,7 @@
 
 9)Display Message for Unsupported Pages: If the active tab is not a YouTube video page, the code updates the display to inform the user that bookmarking is not possible on that page.
 
+<br/>
 
 **Steps to Install this Chrome Extension!**
 
