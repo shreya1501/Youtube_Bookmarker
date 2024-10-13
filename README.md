@@ -1,21 +1,25 @@
 # Youtube_Bookmarker
 <br>
 
-Objective 1:
-To automatically **add a bookmark button to the YouTube video player** when a user visits a YouTube video page. This button enables users to create bookmarks at any desired timestamp in the video, enhancing the video-watching experience.
+**Technical implementation details**
 
-Objective 2:
-To **store the created bookmarks in Chrome's synchronized storage**. By utilizing this storage mechanism, the extension ensures that the bookmarks are preserved across devices and browser sessions, providing users with seamless access to their saved timestamps.
+1)Import Function: The code imports <ul>getActiveTabURL</ul> to obtain the URL of the currently active tab, which is essential for managing bookmarks.
 
-Objective 3:
-To **implement a popup window** that displays all the saved bookmarks for the currently viewed YouTube video. This user-friendly interface allows users to easily manage and review their bookmarks, making it convenient to jump to specific timestamps.
+2)Create Bookmark Elements: The <ul>addNewBookmark</ul> function builds HTML elements for each bookmark, including a title and buttons for playback and deletion.
 
-Objective 4:
-To enable users to **play videos directly from the bookmarked timestamps**. By clicking the play button associated with a bookmark, users can instantly watch the video from their preferred timestamp, eliminating the need for manual seeking.
+3)Get Timestamp for Playback: In the <ul>onPlay</ul> function, the timestamp of the selected bookmark is retrieved from its attributes, enabling playback at the correct moment in the video.
 
-Objective 5:
-To provide users with the option to **delete bookmarks**. This functionality gives users the flexibility to remove unnecessary bookmarks, keeping their bookmark list organized and relevant to their needs.
+4)Remove Bookmark from Display: The <ul>onDelete<ul> function finds the bookmark by its unique ID and removes it from the HTML when the delete button is clicked.
 
+5)Create Control Buttons: The <ul>setBookmarkAttributes</ul> function generates buttons (play and delete) for each bookmark, setting their images and adding click event listeners for user interaction.
+
+6)Wait for Page Load: The code listens for the DOMContentLoaded event, which indicates that the HTML document has fully loaded, before executing any initialization logic.
+
+7)Extract Video ID from URL: The script uses the <ul>URLSearchParams</ul> API to extract the unique video ID from the YouTube video URL, which is necessary for storing and retrieving bookmarks.
+
+8)Retrieve Bookmarks from Storage: The code uses <ul>chrome.storage.sync.get</ul> to fetch the bookmarks associated with the current video ID from Chrome's storage, allowing users to see their saved bookmarks.
+
+9)Display Message for Unsupported Pages: If the active tab is not a YouTube video page, the code updates the display to inform the user that bookmarking is not possible on that page.
 
 <br>
 
